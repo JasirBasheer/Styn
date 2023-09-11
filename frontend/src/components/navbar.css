@@ -1,0 +1,27 @@
+.navbar{
+    width: 100%;
+    height: 67px;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.styn-log a {
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-left: 211px;
+
+}
+.cart-icon a{
+    justify-content: flex-end;
+    align-items: end;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-left: 111px;
+
+}
