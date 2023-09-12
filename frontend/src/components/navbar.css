@@ -1,27 +1,113 @@
-.navbar{
-    width: 100%;
-    height: 67px;
-    background-color: antiquewhite;
-    justify-content: center;
-    align-items: center;
+.navbar {
     display: flex;
-}
-.styn-log a {
-    justify-content: center;
-    display: inline-block;
+    justify-content: space-between;
     align-items: center;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    margin-left: 211px;
+    padding: 18px 20px;
+    background-color: #ffffff; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    box-shadow: 1px 1px 6px 0.2px rgba(32, 30, 30, 0.061);
+  }
+  
+  .styn-log {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-log{
+    text-align: center;
+  }
+  
+  .handburger-icon{
+    display: flex;
+    align-items: center;
+  }
+  
+  .hamburger-menu {
+  /* Style for hamburger menu and menu items (adjust as needed) */
 
-}
-.cart-icon a{
-    justify-content: flex-end;
-    align-items: end;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    margin-left: 111px;
+  }
+  
 
-}
+  
+  /* Style for the logo (adjust as needed) */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(32, 52, 70);
+    /* Add more styles as needed to center your logo */
+  }
+  
+  /* Style for the cart icon (adjust as needed) */
+  .cart {
+    margin-right: 5px;
+    /* Add styling for your cart icon here */
+  }
+  
+
+
+  @media screen and (min-width: 600px) {
+    /* //For Tablets */
+        .cart {
+            margin-right: 70px;
+          }
+          .hamburger-menu {
+            margin-left: 70px;
+          }
+    }
+    
+    @media screen and (min-width: 768px) {
+    /* //For Laptops */
+    .cart {
+        margin-right: 80px;
+      }
+      .hamburger-menu {
+        margin-left: 80px;
+      }
+    }
+    
+    @media screen and (min-width: 992px) {
+    /* //For Large Laptops */
+    .cart {
+        margin-right: 70px;
+      }
+      .hamburger-menu {
+        margin-left: 70px;
+      }
+    }
+    
+    @media screen and (min-width: 1280px) {
+    /* //For Big TV's (HD Screens)  */
+    .cart {
+        margin-right: 70px;
+      }
+      .hamburger-menu {
+        margin-left: 70px;
+      }
+    }
+
+
+
+
+
+
+
+    /* Handburger-menu */
+
+    .menu{
+      width: 50%;
+      height: 100vh;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      overflow: hidden;
+
+      
+    }
+
+    .hidden{
+      display: none;
+    }
+
+    .visible{
+      display: inherit;
+    }
