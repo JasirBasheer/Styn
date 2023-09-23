@@ -1,0 +1,206 @@
+.shopTitle{
+    margin-top: 40px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    margin-bottom: 81px;
+
+}
+.products{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    place-items: center;
+}
+
+.product{
+    border-radius: 15px;
+    width: 200px;
+    height: 350px;
+    /* margin: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product img {
+    width: 170px;
+    height: 300px;
+}
+
+.product .description {
+    text-align: start;
+    font-family: 'Courier New', Courier, monospace;
+    width: 170px;
+    font-size: small;
+
+}
+
+.product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19,19,19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+.addToCartBttn:hover {
+    background-color: rgb(19,19,19);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    /* //For Tablets */
+    .shopTitle{
+        margin-top: 40px;
+        text-align: center;
+        font-family: monospace;
+        font-size: 15px;
+        margin-bottom: 81px;
+    
+    }
+    .products{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        place-items: center;
+
+    }
+    
+    .product{
+        border-radius: 15px;
+        width: 200px;
+        height: 350px;
+        /* margin: 100px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 400px;
+    }
+    .product img {
+        width: 370px;
+    }
+    
+    .product .description {
+        text-align: start;
+        font-family: 'Courier New', Courier, monospace;
+        width: 351px;
+    }
+    }
+    
+    @media screen and (min-width: 768px) {
+    /* //For Laptops */
+    .shopTitle{
+        margin-top: 100px;
+        text-align: center;
+        font-family: monospace;
+        font-size: 15px;
+        margin-bottom: 181px;
+    
+    }
+    .products{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        place-items: center;
+    }
+    
+    .product{
+        border-radius: 15px;
+        width: 200px;
+        height: 350px;
+        /* margin: 100px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .product img {
+        width: 370px;
+        height: auto;
+
+    }
+    
+    .product .description {
+        text-align: start;
+        font-family: 'Courier New', Courier, monospace;
+        width: 351px;
+    
+    }}
+    
+    @media screen and (min-width: 992px) {
+    /* //For Large Laptops */
+    .products{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        place-items: center;
+    }
+    
+    .product{
+        border-radius: 15px;
+        width: 200px;
+        height: 350px;
+        /* margin: 100px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 400px;
+    }
+    .product img {
+        width: 370px;
+    }
+    
+    .product .description {
+        text-align: start;
+        font-family: 'Courier New', Courier, monospace;
+        width: 351px;
+    }    
+    }
+    
+    @media screen and (min-width: 1280px) {
+    /* //For Big TV's (HD Screens)  */
+    .products{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        place-items: center;
+    }
+    
+    .product{
+        border-radius: 15px;
+        width: 200px;
+        height: 350px;
+        /* margin: 100px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 400px;
+    }
+    .product img {
+        width: 370px;
+    }
+    
+    .product .description {
+        text-align: start;
+        font-family: 'Courier New', Courier, monospace;
+        width: 351px;
+    }
+    }
