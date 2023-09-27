@@ -44,15 +44,22 @@ export const Navbar = () => {
         <div className="cart-icon">
         <Link className='cart' to={"/cart"} >
             <Bag size={20}/>
+                
+
             </Link>
+            {/* <span className='bag-quantity'>
+              <span>3</span>
+              </span>
+        */}
         </div>
         </nav>
 
         <div className={menu_class}>
         <Link className='menu-logo' to={"/"} >Styn</Link><br />
-        <a href="/">Shop</a><br />
-        <a href="/cart">Cart</a><br />
-       <a href="/">About</a><br />
+        <Link className='menu-logo1' to={"/"} >Shop</Link><br />
+        <Link className='menu-log1o' to={"/cart"} >Cart</Link><br />
+        <Link className='menu-1logo' to={"/"} >About</Link><br />
+        
           
 
         </div>

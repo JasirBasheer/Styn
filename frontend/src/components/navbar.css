@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 20px;
+    padding: 21px 4px;
     background-color: #ffffff; /* Set your desired background color */
     color: #fff; /* Set your desired text color */
     box-shadow: 1px 1px 6px 0.2px rgba(32, 30, 30, 0.061);
+    width: 100%;
   }
   
   .styn-log {
@@ -14,12 +15,27 @@
   }
   
   .cart-log{
+    display: flex;
     text-align: center;
   }
   
   .handburger-icon{
     display: flex;
     align-items: center;
+  }
+
+  .bag-quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    background: rgb(157, 68, 53);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: smaller;
+    color: #fff;
+    
   }
   
   .hamburger-menu {
@@ -40,8 +56,10 @@
   
   /* Style for the cart icon (adjust as needed) */
   .cart {
-    margin-right: 5px;
-    /* Add styling for your cart icon here */
+    margin-right: 30px;
+  }
+  .hamburger-menu {
+    margin-left: 30px;
   }
   
 
@@ -97,7 +115,7 @@
     .menu{
       width: 70%;
       height: 100%;
-      background-color: rgb(255, 255, 255);
+      background-color: rgba(238, 232, 232, 0.611);
       position: absolute;
       overflow: hidden;
       text-decoration: none;

@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns:1fr 1fr ;
     place-items: center;
+    
 }
 
 .product{
@@ -34,6 +35,8 @@
     font-family: 'Courier New', Courier, monospace;
     width: 170px;
     font-size: small;
+    margin-top: 11px;
+
 
 }
 
@@ -61,6 +64,10 @@
 
 @media screen and (min-width: 600px) {
     /* //For Tablets */
+    
+.shop{
+    padding: 1rem 2rem;
+}
     .shopTitle{
         margin-top: 40px;
         text-align: center;
@@ -97,11 +104,17 @@
         text-align: start;
         font-family: 'Courier New', Courier, monospace;
         width: 351px;
+        margin-top: 11px;
+
     }
     }
     
     @media screen and (min-width: 768px) {
     /* //For Laptops */
+    
+.shop{
+    padding: 2rem 4rem;
+}
     .shopTitle{
         margin-top: 100px;
         text-align: center;
@@ -138,11 +151,16 @@
         text-align: start;
         font-family: 'Courier New', Courier, monospace;
         width: 351px;
+        margin-top: 11px;
     
     }}
     
     @media screen and (min-width: 992px) {
     /* //For Large Laptops */
+    
+.shop{
+    padding: 2rem 4rem;
+}
     .products{
         width: 100%;
         height: auto;
@@ -170,6 +188,8 @@
         text-align: start;
         font-family: 'Courier New', Courier, monospace;
         width: 351px;
+        margin-top: 11px;
+
     }    
     }
     
@@ -202,5 +222,16 @@
         text-align: start;
         font-family: 'Courier New', Courier, monospace;
         width: 351px;
+        margin-top: 11px;
+
     }
+    
+.shop{
+    padding: 2rem 3rem;
+}
     }
+
+    
+.shop{
+    padding: 2rem 0rem;
+}

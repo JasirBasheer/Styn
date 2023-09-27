@@ -8,6 +8,9 @@ import { Footer } from "./components/footer.jsx";
 import { SingleProduct } from "./components/singleproducts.jsx";
 import { ErrorPage } from './components/error';
 import { Admin } from './admin/pages/dasbord/shop.jsx';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -17,6 +20,7 @@ function App() {
     <div className='App'>
 
 <Router>
+  <ToastContainer/>
   <Navbar />
   <Routes>
     <Route path='/' element={<Shop/>} />
@@ -31,8 +35,6 @@ function App() {
 </Router>
 
 
-
-{/* Admin Routers */}
 
     </div>
   )

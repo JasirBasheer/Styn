@@ -19,7 +19,7 @@ export const Footer = () => {
             <a href="/"><PinterestLogo/> Pinterest</a><br />
             <a href="/"><InstagramLogo/> Instagram</a><br />
             <a href="/"><WhatsappLogo/> Whatsapp us</a><br />
-            <p><EnvelopeSimple/>ContactSytn@gmail.com</p><br />
+            <p><EnvelopeSimple/>ContactSytn</p><br />
             </div>
             </div>
             </div>
