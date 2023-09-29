@@ -14,7 +14,7 @@ const products = [
     {
         id:3,
         name:"Viscose – Linen Shirt",
-        price: 64356,
+        price: 6436,
         image: "https://res.cloudinary.com/dlc1uol4z/image/upload/v1695542923/3_ov7khb.webp",
     },
     {

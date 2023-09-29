@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import {Bag,Equals} from "phosphor-react";
-import "./navbar.css"
+import "./navbar.css";
+import { useSelector } from 'react-redux';
 
 export const Navbar = () => {
+  const {cartTotalQuantity} = useSelector(state => state.cart)
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
   const [menu_class, setMenuClass] = useState("menu hidden")
   const [isMenuClicked, setIsMenuClikced] = useState("menu hidden")
@@ -47,10 +49,10 @@ export const Navbar = () => {
                 
 
             </Link>
-            {/* <span className='bag-quantity'>
-              <span>3</span>
+            <span className='bag-quantity'>
+              <span>{cartTotalQuantity}</span>
               </span>
-        */}
+       
         </div>
         </nav>
 
