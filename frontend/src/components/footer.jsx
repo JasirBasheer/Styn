@@ -18,15 +18,16 @@ export const Footer = () => {
             <a href="/"><YoutubeLogo/> Youtube</a><br />
             <a href="/"><PinterestLogo/> Pinterest</a><br />
             <a href="/"><InstagramLogo/> Instagram</a><br />
-            <a href="/"><WhatsappLogo/> Whatsapp us</a><br />
+            <WhatsappLogo/> <a href="/">Whatsapp us</a><br />
             <p><EnvelopeSimple/>ContactSytn</p><br />
             </div>
             </div>
             </div>
         <div className="df">
         <hr />
-            <a href="/">MY ACCOUNT</a>
-            <a href="/">TERMS OF SERVICE</a>
+        <br />
+            <a href="/">MY ACCOUNT </a> 
+            <a href="/">TERMS OF SERVICE </a>
             <a href="/">PRIVACY POLICY</a>
             <a href="/">EXCHANGE & CANCELLATION POLICY</a>
             <a href="/">SHIPPING & DELIVERY POLICY</a>

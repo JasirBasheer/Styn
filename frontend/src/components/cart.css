@@ -160,3 +160,7 @@
     align-items: center;
     justify-content: center;
 }
+.cart-checkout .cart-signup{
+    background: rgba(35, 34, 34, 0.763);  
+    color: white;
+}

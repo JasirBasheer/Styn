@@ -235,3 +235,28 @@
 .shop{
     padding: 2rem 0rem;
 }
+.loding{
+    align-items: center;
+    width: 100%;
+    height: 411px;
+    justify-content: center;
+    display: flex;
+}
+.lodingg{
+    align-items: center;
+    width: 100%;
+    height: 411px;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+.cart-icon{
+    position: relative;
+    }
+    
+    .cart-icon span{
+    position: absolute;
+    top: -2px;
+    right: -2px; 
+    margin-right: 66px;
+    }

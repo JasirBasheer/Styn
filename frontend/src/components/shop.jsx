@@ -1,28 +1,38 @@
 import React from 'react';
 import './shop.css';
-import {useDispatch } from 'react-redux';
+import {useDispatch, useSelector } from 'react-redux';
 import { useGetAllProductsQuery } from '../features/productsApi';
 import { addToCart } from '../features/cartSlice';
 // import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
+import { BarLoader} from 'react-spinners'
 
 
 export const Shop = () => {
+  const {items: products, status } =useSelector((state) => state.products);
+
   const {data,error, isLoading} = useGetAllProductsQuery();
   const dispatch = useDispatch()
-  const history = useNavigate()
+  const navigate = useNavigate()
 
   const handleAddToCart = (product) =>{
     dispatch(addToCart(product))
-    history("/cart");
+    navigate("/cart");
   };
 
   return (
     <div className='shop'>
       { isLoading ?( 
-      <p>Loading</p>
-      ) : error ? (
-      <p>An error occured...</p>
+        <div className="loding">
+        <BarLoader color="#111615" />
+        </div>
+              ) : error ? (
+                <div className="lodingg">
+        <p>Something went wrong with the server...</p> 
+         <br />
+        <p>Please come back later :)</p>  
+        </div>
+    
       ) :(
          <>
          

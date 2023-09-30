@@ -10,6 +10,8 @@ import { ErrorPage } from './components/error';
 import { Admin } from './admin/pages/dasbord/shop.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Register from './components/auth/Register';
+import Login from './components/auth/Login';
 
 
 
@@ -25,6 +27,8 @@ function App() {
   <Routes>
     <Route path='/' element={<Shop/>} />
     <Route path='/cart'element={<Cart/>} />
+    <Route path='/register' element={<Register />} />
+    <Route path='/login' element={<Login />} />
     <Route path='/singleproduct/:id'element={< SingleProduct />} />
     <Route path='*' element={< ErrorPage />} />
     <Route path='/stynadmin' element={<Shop/>} />
