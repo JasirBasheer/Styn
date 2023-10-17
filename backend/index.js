@@ -4,6 +4,7 @@ const mongoose =require("mongoose");
 const register = require("./routes/register");
 const login = require("./routes/login");
 const products = require("./products");
+const delivery = require("./routes/delivery");
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/register",register);
 app.use("/api/login",login);
+app.use("/api/delivery", delivery);
 
 app.get("/", (req,res)=>{
     res.send("welcome to our styn API...")
@@ -21,6 +23,10 @@ app.get("/", (req,res)=>{
 app.get("/products", (req,res)=>{
     res.send(products)
 });
+app.get('/products/:productId', (req, res) => {
+    res.send(products)
+
+  });
 
 const port = process.env.PORT || 8000
 const uri = process.env.DB_URI

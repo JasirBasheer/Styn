@@ -33,6 +33,7 @@ export const Cart = () => {
 
   return (
     <div className='cart-container'>
+      
       <h2>Shopping Cart</h2>
     { cart.cartItems.length === 0 ?(
       <div className="cart-empty">
@@ -65,14 +66,14 @@ export const Cart = () => {
                   <button onClick={() => handleRemoveFromCart(cartItem)} >Remove</button>
                 </div>
               </div>
-              <div className="cart-product-price">${cartItem.price}</div>
+              <div className="cart-product-price">₹{cartItem.price}</div>
               <div className="cart-product-quantity">
                 <button onClick={() => handleDecreaseCart(cartItem)} >-</button>
                 <div className="count">{cartItem.cartQuantity}</div>
                 <button onClick={() => handleIncreaseCart(cartItem)} >+</button>
               </div>
               <div className="cart-product-total-price">
-                ${cartItem.price * cartItem.cartQuantity}
+                ₹{cartItem.price * cartItem.cartQuantity}
               </div>
             </div>
           ))}
@@ -82,11 +83,11 @@ export const Cart = () => {
           <div className="cart-checkout">
             <div className="subtotal">
               <span>Subtotal</span>
-              <span className='amount'>${cart.cartTotalAmount}</span>
+              <span className='amount'>₹{cart.cartTotalAmount}</span>
             </div>
             <p>All over Kerala shipping calculated at checkout</p>
             {auth._id ?(
-            <button>Check out</button>
+            <button onClick={() =>navigate("/address")}>Check out</button>
             ):(
               <button className='cart-signup' onClick={() =>navigate("/register")}>Sign Up to Check out</button>
             )}
@@ -97,6 +98,7 @@ export const Cart = () => {
   <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
 </svg>    <span>Continue Shopping</span>
           </Link>
+          
         </div>
             
           </div>

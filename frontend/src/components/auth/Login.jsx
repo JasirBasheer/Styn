@@ -5,7 +5,6 @@ import { StyledForm } from './StyledForm';
 import { ClipLoader } from 'react-spinners';
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components'
 
 const Login = () => {
     const dispatch = useDispatch();
@@ -16,7 +15,7 @@ const Login = () => {
 
         useEffect(() => {
             if(auth._id){
-                navigate("/cart")
+                navigate("/address")
             }
         }, [auth._id, navigate])
     const [user, setUser] = useState({

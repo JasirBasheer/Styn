@@ -15,7 +15,7 @@ const Register = () => {
 
         useEffect(() => {
             if(auth._id){
-                navigate("/cart")
+                navigate("/address")
             }
         }, [auth._id, navigate])
     const [user, setUser] = useState({
@@ -53,7 +53,9 @@ const handleSubmit = (e) =>{
       <button>
         {auth.registerStatus === 'pending' ? <ClipLoader color="#121716" size={16}/> : 'Sign Up'}
       </button>
-      <Link to={"/login"} style={{color: "black", justifyContent: "start",display: "flex",fontSize:"14px"}}>Already have an account. Login?</Link>
+      <div style={{display: "flex"}}>
+      <Link to={"/login"} style={{color: "black", justifyContent: "start",display: "flex",fontSize:"14px", textDecoration:"none"}}>Already have an account.</Link>   <Link to={"/login"} style={{color: "black", justifyContent: "start",display: "flex",fontSize:"14px"}}>Login?</Link>
+      </div>
       {auth.registerStatus === 'rejected' ? <p style={{color: "red", justifyContent: "start",display: "flex",fontSize:"16px"}}>{auth.registerError}</p> : null}
       <p></p>
 

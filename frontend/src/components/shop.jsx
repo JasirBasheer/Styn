@@ -4,8 +4,9 @@ import {useDispatch, useSelector } from 'react-redux';
 import { useGetAllProductsQuery } from '../features/productsApi';
 import { addToCart } from '../features/cartSlice';
 // import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { BarLoader} from 'react-spinners'
+
 
 
 export const Shop = () => {
@@ -30,7 +31,7 @@ export const Shop = () => {
                 <div className="lodingg">
         <p>Something went wrong with the server...</p> 
          <br />
-        <p>Please come back later :)</p>  
+        <p>Refresh the page or please come back later :)</p>  
         </div>
     
       ) :(
@@ -40,15 +41,16 @@ export const Shop = () => {
         <h1>Shop</h1>
         </div> 
      <div className="products">
+     {/* <SingleProduct productId={productId} /> */}
           {data?.map(product => <div key={product.id} className='product'>
-            {/* <Link to={'/cart'}> */}
+            <Link className='linkk' to={`/products/${product.id}`}>
              <img src={product.image} alt={product.name}/>
             <div className="description">
              <p>{product.name}</p>
               <p className='price'>₹{product.price}</p>
              
             </div>
-            {/* </Link> */}
+            </Link>
             <button className='addToCartBttn' onClick={() => handleAddToCart(product)}>Add to cart</button>
           </div>)}
          </div>

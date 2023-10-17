@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns:1fr 1fr ;
     place-items: center;
+    text-decoration: none;
     
 }
 
@@ -24,7 +25,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+
 }
+
+.product link{
+    text-decoration: none;
+}
+
 .product img {
     width: 170px;
     height: 300px;
@@ -223,6 +231,7 @@
         font-family: 'Courier New', Courier, monospace;
         width: 351px;
         margin-top: 11px;
+        text-decoration: none;
 
     }
     
@@ -260,3 +269,10 @@
     right: -2px; 
     margin-right: 66px;
     }
+
+
+
+.linkk{
+    text-decoration: none;
+    color: black;
+}

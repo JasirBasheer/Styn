@@ -1,0 +1,13 @@
+.continue-shopping{
+    margin-top: 1rem;    
+}
+.continue-shopping a{
+    color: rgb(62, 57, 57);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+.continue-shopping a span{
+    margin-left: 0.5rem;
+}

@@ -5,13 +5,15 @@ import { Navbar } from "./components/navbar.jsx";
 import { Shop } from "./components/shop";
 import { Cart } from "./components/cart";
 import { Footer } from "./components/footer.jsx";
-import { SingleProduct } from "./components/singleproducts.jsx";
+import SingleProduct from "./components/singleproducts.jsx"; 
 import { ErrorPage } from './components/error';
 import { Admin } from './admin/pages/dasbord/shop.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import  { DeliveryForm }  from './components/Address.jsx'
+
 
 
 
@@ -29,9 +31,9 @@ function App() {
     <Route path='/cart'element={<Cart/>} />
     <Route path='/register' element={<Register />} />
     <Route path='/login' element={<Login />} />
-    <Route path='/singleproduct/:id'element={< SingleProduct />} />
+    <Route path='/products/:productId'element={< SingleProduct />} />
     <Route path='*' element={< ErrorPage />} />
-    <Route path='/stynadmin' element={<Shop/>} />
+    <Route path='/address' element={<DeliveryForm/>} />
     <Route path='/admin' element={<Admin/>} />
 
   </Routes>

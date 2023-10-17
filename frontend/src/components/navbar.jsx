@@ -51,8 +51,15 @@ export const Navbar = () => {
             <Link className='logo' to={"/"} >Styn</Link>
         </div>
         <div className="cart-icon">
-        <Link className='cart' to={"/cart"} > <Bag size={20}/> </Link>
-              <span className='bag-quantity'>{cartTotalQuantity}</span>
+          {cartTotalQuantity === 0 ?
+          <Link className='cart' to={"/cart"} > <Bag size={20}/> </Link>
+          :
+          <>
+          <Link className='cart' to={"/cart"} > <Bag size={20}/> </Link>
+          <span className='bag-quantity'>{cartTotalQuantity}</span>
+          </>
+           }
+        
         </div>
         </nav>
 
@@ -61,6 +68,7 @@ export const Navbar = () => {
         <Link className='menu-logo' to={"/"} >Styn</Link><br />
         <Link className='menu-logo1' to={"/"} >Shop</Link><br />
         <Link className='menu-log1o' to={"/cart"} >Cart</Link><br />
+        <Link className='menu-1logo' to={"/"} >About</Link><br />
         {
           auth._id ? <Logout onClick={()=>{
             dispatch(logoutUser(null));
@@ -73,7 +81,7 @@ export const Navbar = () => {
           </AuthLinks>
           </>
         }
-        <Link className='menu-1logo' to={"/"} >About</Link><br />
+       
         
           
 
