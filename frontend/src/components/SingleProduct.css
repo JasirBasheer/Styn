@@ -1,0 +1,84 @@
+/* SingleProduct.css */
+.single-product-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .product-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-image {
+    max-width: 300px;
+  }
+  
+  .product-info {
+    margin-left: 20px;
+  }
+  
+  .product-title {
+    font-size: 24px;
+  }
+  
+  .product-price {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+
+  
+  .product-description {
+    max-width: 400px;
+  }
+  
+  .description-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .description-text {
+    font-size: 16px;
+  }
+  
+.image-gallery {
+    display: flex;
+    flex-direction: column; /* Display the small images vertically */
+    align-items: center;
+  }
+  
+  .thumbnail-image {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    margin: 4px; /* Adjust the margin as needed */
+    cursor: pointer;
+    /* Add any other styles for the small thumbnail images */
+  }
+  .add-to-cart-button {
+    background-color: transparent;
+    border: 2px solid rgb(19,19,19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+/* SingleProduct.css */
+
+/* ... (existing styles) */
+
+.size-select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Add styles for the selected size, if needed */
+  .selected-size {
+    color: #007bff; /* Customize the color */
+    font-weight: bold;
+  }
+  

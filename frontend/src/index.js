@@ -1,29 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App';
 
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from 'react-redux';
 
-import produtsReducer, { productsFetch } from "./features/produtsSlice";
+import productsReducer, { productsFetch } from "./features/productsSlice";
 import { productsApi } from './features/productsApi';
 import cartReducer, { getTotals } from './features/cartSlice';
 import authReducer, { loadUser } from './features/authSlice';
 import deliveryReducer from './features/deliverySlice';
-// import singleProductReducer from './features/productSlice';
-
 
 const store = configureStore({
   reducer: {
-    products: produtsReducer,
+    products: productsReducer,
     cart: cartReducer,
     auth: authReducer,
-    delivary: deliveryReducer,
+    delivery: deliveryReducer,
     [productsApi.reducerPath]: productsApi.reducer,
   },
-  middleware: (getDefaultMiddleware) => {
-   return getDefaultMiddleware().concat(productsApi.middleware)
-  }
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(productsApi.middleware),
 });
 
 store.dispatch(productsFetch());
@@ -34,8 +30,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+      <App />
     </Provider>
   </React.StrictMode>
 );
-

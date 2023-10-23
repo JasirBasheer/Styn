@@ -23,9 +23,18 @@ app.get("/", (req,res)=>{
 app.get("/products", (req,res)=>{
     res.send(products)
 });
-app.get('/products/:productId', (req, res) => {
-    res.send(products)
 
+
+// Endpoint to fetch a single product by productId
+app.get('/products/:productId', (req, res) => {
+    const productId = parseInt(req.params.productId);
+    const product = products.find((p) => p.id === productId);
+  
+    if (product) {
+      res.json(product);
+    } else {
+      res.status(404).json({ message: 'Product not found' });
+    }
   });
 
 const port = process.env.PORT || 8000

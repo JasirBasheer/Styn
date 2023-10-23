@@ -2,24 +2,15 @@ import React from 'react';
 import './shop.css';
 import {useDispatch, useSelector } from 'react-redux';
 import { useGetAllProductsQuery } from '../features/productsApi';
-import { addToCart } from '../features/cartSlice';
-// import { Link } from "react-router-dom";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { BarLoader} from 'react-spinners'
 
 
 
 export const Shop = () => {
-  const {items: products, status } =useSelector((state) => state.products);
 
   const {data,error, isLoading} = useGetAllProductsQuery();
   const dispatch = useDispatch()
-  const navigate = useNavigate()
-
-  const handleAddToCart = (product) =>{
-    dispatch(addToCart(product))
-    navigate("/cart");
-  };
 
   return (
     <div className='shop'>
@@ -51,7 +42,7 @@ export const Shop = () => {
              
             </div>
             </Link>
-            <button className='addToCartBttn' onClick={() => handleAddToCart(product)}>Add to cart</button>
+            
           </div>)}
          </div>
          </>
