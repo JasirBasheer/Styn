@@ -8,7 +8,8 @@ const products = [
         "https://res.cloudinary.com/dlc1uol4z/image/upload/v1695542923/3_ov7khb.webp",
          "https://res.cloudinary.com/dlc1uol4z/image/upload/v1695542923/3_ov7khb.webp",],
          sizes: ["S", "M", "L", "XL"], 
-    },
+         description: "Sun is out \t Relaxed fit shirt made of a cotton and viscose blend, which gives it a relaxed and soft texture.\nLapel collar and long sleeves with buttoned cuffs. Button-up front.\n\nMaterial\n80% Cotton 20% Viscose"
+        },
     {
         id:2,
         name:"Textured Shirt",

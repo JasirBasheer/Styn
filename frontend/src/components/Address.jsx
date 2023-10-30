@@ -34,6 +34,8 @@ export const DeliveryForm = () => {
     }
   };
 
+
+
   return (
     <form className="delivery-form" onSubmit={handleSubmit}>
       <div className="form-group">
@@ -69,9 +71,9 @@ export const DeliveryForm = () => {
           required
         />
       </div>
-      <button type="submit" className="submit-button">Submit</button>
+      <button type="submit" className="rzp-button1">Submit</button>
+   
     </form>
   );
 };
-
 export default DeliveryForm;

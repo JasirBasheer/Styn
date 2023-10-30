@@ -5,6 +5,12 @@ const register = require("./routes/register");
 const login = require("./routes/login");
 const products = require("./products");
 const delivery = require("./routes/delivery");
+const Razorpay = require("razorpay");
+  
+const razorpay = new Razorpay({
+  key_id: "YOUR_RAZORPAY_KEY", // Replace with your Razorpay key
+  key_secret: "YOUR_RAZORPAY_SECRET", // Replace with your Razorpay secret
+});
 
 const app = express();
 
@@ -36,6 +42,26 @@ app.get('/products/:productId', (req, res) => {
       res.status(404).json({ message: 'Product not found' });
     }
   });
+
+
+
+
+
+app.post("/create-order", async (req, res) => {
+  try {
+    const order = await razorpay.orders.create({
+      amount: req.body.amount,
+      currency: "INR",
+      receipt: "order_rcptid_11", // Replace with your custom receipt ID
+    });
+
+    res.json({ id: order.id });
+  } catch (error) {
+    console.error("Error creating order:", error);
+    res.status(500).send("Error creating order");
+  }
+});
+
 
 const port = process.env.PORT || 8000
 const uri = process.env.DB_URI

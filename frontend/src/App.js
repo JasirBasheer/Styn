@@ -7,12 +7,12 @@ import { Cart } from "./components/cart";
 import { Footer } from "./components/footer.jsx";
 import SingleProduct from "./components/singleproducts.jsx"; 
 import { ErrorPage } from './components/error';
-import { Admin } from './admin/pages/dasbord/shop.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import  { DeliveryForm }  from './components/Address.jsx'
+import Payment from './components/checkout';
 
 
 
@@ -34,7 +34,7 @@ function App() {
     <Route path='/products/:productId'element={< SingleProduct />} />
     <Route path='*' element={< ErrorPage />} />
     <Route path='/address' element={<DeliveryForm/>} />
-    <Route path='/admin' element={<Admin/>} />
+    <Route path='/checkout' element={<Payment/>} />
 
   </Routes>
   <Footer/>

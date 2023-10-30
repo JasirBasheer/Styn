@@ -43,19 +43,26 @@ const SingleProduct = () => {
 
   return (
     <div className="single-product-container">
-      <div className="product-details">
-        <img className="product-image" src={data.image} alt={data.name} />
-        <div className="image-gallery">
+
+      <div className="left-section">
+      <img className="product-image" src={data.image} alt={data.name} />
+      <div className="image-gallery">
           {data.images && data.images.map((image, index) => (
             <img className="thumbnail-image" key={index} src={image} alt={`Product ${index + 1}`} />
           ))}
         </div>
+      </div>
+
+
+    <div className="right-sectionn">
+      <div className="product-details">
         <div className="product-info">
           <h1 className="product-title">
-            {data.name} {selectedSize && `(${selectedSize})`}
+            {data.name} 
           </h1>
           <p className="product-price">₹{data.price}</p>
-          <h1>select your size</h1>
+          <h1 className="product-size">select your size</h1>
+          <div className="size-select">
           {data.sizes && (
             <select
               value={selectedSize}
@@ -70,6 +77,7 @@ const SingleProduct = () => {
               ))}
             </select>
           )}
+          </div>
           <button
             className="add-to-cart-button"
             onClick={() => handleAddToCart(data)}
@@ -78,10 +86,12 @@ const SingleProduct = () => {
           </button>
         </div>
       </div>
+      <hr />
       <div className="product-description">
         <h2 className="description-heading">Product Description</h2>
         <p className="description-text">{data.description}</p>
       </div>
+    </div>
     </div>
   );
 };
