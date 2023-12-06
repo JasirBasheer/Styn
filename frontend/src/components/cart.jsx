@@ -55,6 +55,7 @@ export const Cart = () => {
             <h3 className="total">Total</h3>
           </div>
           <div className="cart-items">
+
             {cart.cartItems?.map(cartItem => (
               <div className="cart-item" key={cartItem.id}>
                 <div className="cart-product">

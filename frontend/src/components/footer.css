@@ -24,3 +24,20 @@ align-content: flex-start;
 }.df a{
     text-decoration: none;
 }
+
+.input-subscribe{
+    width: 410px !important;
+    margin-top: 11px;
+    
+}
+
+.btnSub{
+    margin-top: 9px;
+    width: 120px;
+    height: 50px;
+}
+
+.input-sub{
+    display: flex;
+    margin-left: 111px;
+}

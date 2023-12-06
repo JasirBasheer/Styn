@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import  { DeliveryForm }  from './components/Address.jsx'
-import Payment from './components/checkout';
+import Payment from './components/payment.jsx';
 
 
 

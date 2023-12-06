@@ -11,6 +11,10 @@ export const Footer = () => {
         <div className="sections">
           <div className="left-section">
             <p>Subscribe for early updates, offers.</p>
+            <div className="input-sub">
+            <input className='input-subscribe' type="text" placeholder='example.gmail.com'/>
+            <button className='btnSub'>Subscribe</button>
+            </div>
           </div>
           <div className="right-section">
             <h4>Connect</h4>
@@ -20,7 +24,7 @@ export const Footer = () => {
               <a href="/"><PinterestLogo /> Pinterest</a><br />
               <a href="/"><InstagramLogo /> Instagram</a><br />
               <WhatsappLogo /> <a href="/">Whatsapp us</a><br />
-              <p><EnvelopeSimple /> ContactSytn</p><br />
+              <p><EnvelopeSimple /> ContactSytn@gmail.com</p><br />
             </div>
           </div>
         </div>
@@ -33,8 +37,9 @@ export const Footer = () => {
           <a href="/">EXCHANGE & CANCELLATION POLICY</a>
           <a href="/">SHIPPING & DELIVERY POLICY</a>
         </div>
-        {/* Copyright footer with the current year */}
+
         <div className="copyright">
+          <br />
           &copy; {currentYear} All Rights Reserved.
         </div>
       </div>
